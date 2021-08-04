@@ -31,3 +31,15 @@
     transform: rotate(360deg);
   }
 }
+
+.movie-grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+@media only screen and (max-device-width: 480px) {
+  .movie-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
